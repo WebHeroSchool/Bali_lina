@@ -274,7 +274,7 @@ opacity: 0;
     top: 6%;
     left: 84%;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
   }
   .menu__btn > span,
 .menu__btn > span::before,
@@ -307,6 +307,7 @@ opacity: 0;
   text-align: center;
   background-color: #fff;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  z-index: 1;
 }
 .menu__item__box {
   display: block;
@@ -326,10 +327,12 @@ opacity: 0;
 #menu__toggle:checked ~ .menu__btn > span::before {
   top: 0;
   transform: rotate(0);
+  background-color: #000000;
 }
 #menu__toggle:checked ~ .menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
+  background-color: #000000;
 }
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
