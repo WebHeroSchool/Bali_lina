@@ -262,17 +262,16 @@ opacity: 0;
     display: none;
   }
   .logo {
-    margin-right: 45%;
+    margin-left: 12%;
   }
   .gl {
-    margin: 0 0 0 10%;
+    margin: 0 0 0 3%;
   }
   .menu__btn {
     position: absolute;
-    width: 25px;
+    width: 23px;
     height: 3px;
-    top: 5%;
-    left: 84%;
+    left: 85%;
     cursor: pointer;
     z-index: 2;
   }
@@ -359,8 +358,8 @@ opacity: 0;
     margin: 0 0 0 4%;
   }
 .logo {
-  margin: 12% 0 5% 12%;
-  background-size: 70%;
+  margin: 11% 0 6% 11%;
+  background-size: 75%;
 }
 .main__tital {
     font: bold 170px/1px PT Serif;
