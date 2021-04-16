@@ -1,0 +1,381 @@
+h1 {
+  font-family: 'pt_serifbold', sans-serif;
+}
+p {
+  font-family: 'museo_sans_cyrl500', sans-serif;
+}
+body {
+  margin: 0;
+}
+.wrapper {
+  background: url(img/fon.svg) no-repeat;
+  background-size: cover;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 10% 0;
+}
+.logo {
+  padding: 40px 100px;
+  background: center no-repeat url(img/v0.svg);
+  background-size: 73%;
+  margin-top: 4%;
+  margin-left: 9%;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  margin: 4% 6% 0 25%;
+}
+.menu :last-child {
+margin-right: 0px;
+}
+.menu__item {
+  position: relative;
+  margin-right: 34px;
+  font: 500 23px/25px museo_sans_cyrl500, arial, helvetica, sans-serif;
+  color: #F8EEE4;
+  text-decoration: none;
+  transition: opacity .5s;
+}
+.menu__item:hover {
+  opacity: 0.5;
+}
+.menu__item:hover:after {
+  opacity: 1;
+  position: absolute;
+  display: block;
+  content: '';
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #0056EC;
+}
+.picture {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+ }
+  .pit1 {
+    background: no-repeat top url(img/1.png);
+    width: 49%;
+    height: 60%;
+    margin: 1% 3% 25% 0;
+  }
+  .pit2 {
+    background: no-repeat top  url(img/2.png);
+    width: 47%;
+    height: 55%;
+    margin: 1% 2% 25% 0;
+  }
+  .pit3 {
+    background: no-repeat top  url(img/3.png);
+    width: 32%;
+    height: 55%;
+    margin: 1% 0 25% 0;
+}
+.gl {
+  padding: 3% 12% 0 0;
+  margin: 0 0 0 10%;
+}
+.main {
+  display: flex;
+}
+.main__tital {
+  font: bold 285px/1px PT Serif;
+  color: #F8EEE4;
+  opacity: 0.4;
+  margin: 9% 0 0 0;
+}
+.main__tital_2 {
+  margin: 100px 0 80px 88px;
+  top: 36%;
+  font: bold 98px/15px PT Serif;
+  color: #F8EEE4;
+}
+.main__subtitel {
+  width: 87%;
+  margin: 0 0 40px 30px;
+  font: 22px/24px museo_sans_cyrl500 , arial, helvetica, sans-serif;
+  color: #F8EEE4;
+}
+.main__button {
+  margin: 5px 0 40% 5%;
+  font: 24px/19px museo_sans_cyrl500, arial, helvetica, sans-serif;
+  padding: 19px 35px;
+  width: 220px;
+  height: 20px;
+  display: block;
+  color: #ffffff;
+  background: #D4BEA3;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  margin-bottom: 40%;
+}
+.main__button:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+.main__button:hover:before {
+  left: 0%;
+  right: auto;
+  width: 100%;
+}
+.main__button:before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 0px;
+  z-index: -1;
+  content: '';
+  color: #000 !important;
+  background: #FFDAB9;
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.main__tital-text_highlight {
+  background: #ecf3ff;
+}
+.menu__box {
+  display: none;
+}
+#menu__toggle {
+opacity: 0;
+}
+@media (max-width: 1550px) {
+.gl {
+   padding: 3% 0 0 0;
+ }
+}
+@media (max-width: 1370px) {
+  .wrapper {
+    min-width: 140%;
+  }
+  .menu {
+    margin: 4% 6% 0 40%;
+  }
+  .main__tital {
+    font: bold 280px/1px PT Serif;
+    margin: 9% 0 0 1%;
+  }
+  .main__tital_2 {
+    margin: 100px 0 80px 88px;
+  }
+  .main__subtitel {
+    width: 90%;
+    font: 22px/24px museo_sans_cyrl500 , arial, helvetica, sans-serif;
+  }
+  .gl {
+    padding: 3% 12% 0 0;
+  }
+  .main__button {
+    margin: 0 0 40% 5%;
+  }
+}
+@media (max-width: 1125px) {
+  .gl {
+    padding: 3% 0 0 0;
+  }
+}
+@media (max-width: 1030px) {
+  .wrapper {
+    min-width: 100%;
+  }
+  .header {
+    margin: 0 0 7% 0;
+  }
+  .menu__item {
+    font: 500 15px/1px museo_sans_cyrl500, arial, helvetica, sans-serif;
+    margin-right: 29px;
+  }
+  .menu {
+    margin: 5% 4% 0 0;
+  }
+  .logo {
+    background: top left no-repeat url(img/v0.svg);
+    margin-top: 6%;
+    margin-left: 4%;
+    padding: 30px 70px;
+    background-size: 75%;
+  }
+  .gl {
+    padding: 4% 0 0 0;
+    margin: 0 0 0 4%;
+  }
+  .main__tital {
+    font: bold 200px/1px PT Serif;
+    margin: 20% 0 0 0;
+  }
+  .main__tital_2 {
+    margin: 70px 0 53px 60px;
+    font: bold 70px/15px PT Serif;
+  }
+  .main__subtitel {
+    width: 84%;
+    margin: 0 0 24px 15px;
+    font: 16px/20px museo_sans_cyrl500 , arial, helvetica, sans-serif;
+  }
+  .main__button {
+    margin: 5px 0 37% 3%;
+    font: 17px/19px museo_sans_cyrl500, arial, helvetica, sans-serif;
+    padding: 10px 1px;
+    width: 205px;
+    height: 20px;
+  }
+  .picture {
+    width: 105%;
+  }
+  .pit1 {
+    width: 69%;
+    height: 53%;
+    margin: 0 4% 20% 0;
+  }
+  .pit2 {
+    width: 60%;
+    height: 47%;
+    margin: 1% 5% 21% 0;
+  }
+  .pit3 {
+    width: 11%;
+    height: 47%;
+    margin: 1% 0 21% 0;
+  }
+}
+@media (max-width: 950px) {
+  .logo {
+    margin-right: 25%
+  }
+  .gl {
+    padding: 3% 0 0 0;
+  }
+}
+@media (max-width: 768px) {
+  .menu__item, .pit1, .pit2, .pit3 {
+    display: none;
+  }
+  .logo {
+    margin-left: 12%;
+  }
+  .gl {
+    margin: 0 0 0 3%;
+  }
+  .menu__btn {
+    position: absolute;
+    width: 23px;
+    height: 3px;
+    left: 85%;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #FCF5ED;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 175px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  z-index: 1;
+}
+.menu__item__box {
+  display: block;
+  padding: 13px 20px;
+  color: #000000;
+  font-family: museo_sans_cyrl500, arial, helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu__item__box:hover {
+  background-color: #FCF5ED;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+  background-color: #000000;
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+  background-color: #000000;
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+  background-color: #FCF5ED;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+.menu__item__box {
+  transition-duration: .25s;
+  }
+}
+@media (max-width: 400px) {
+  .header {
+    margin: 0 0 12% 0;
+  }
+  .gl {
+    margin: 0 0 0 4%;
+  }
+.logo {
+  margin: 11% 0 6% 11%;
+  background-size: 75%;
+}
+.main__tital {
+    font: bold 170px/1px PT Serif;
+    margin: 20% 0 0 0;
+  }
+  .main__tital_2 {
+    margin: 70px 0 70px 60px;
+    font: bold 60px/15px PT Serif;
+  }
+  .main__subtitel {
+    width: 85%;
+    margin: 0 0 11% 25px;
+    font: 18px/21px museo_sans_cyrl500 , arial, helvetica, sans-serif;
+    text-align: center;
+  }
+  .main__button {
+    margin: 5px 0 30% 18%;
+  }
+}
